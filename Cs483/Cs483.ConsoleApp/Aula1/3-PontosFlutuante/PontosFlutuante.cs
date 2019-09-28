@@ -13,12 +13,7 @@ namespace Cs483.ConsoleApp.Aula1._3_PontosFlutuante
             Console.WriteLine("Pontos flutuante");
             Float();
             Double();
-            decimal salario = 1050.00m;
-            Console.WriteLine($"Salario professor: {salario}");
-            decimal aulaE = 10;
-            decimal valorA = 100.00m;
-            decimal soma = (aulaE * valorA) + salario;
-            Console.WriteLine($"Total a receber: {soma}");
+            Decimal();
             double massaT = 5.972e24;
 
             //Decimal
@@ -27,6 +22,16 @@ namespace Cs483.ConsoleApp.Aula1._3_PontosFlutuante
             //decimal soma3 = vlBeer3 + vlBeerA3;
             //Console.WriteLine($"VlB: {vlBeer} + vlBA: {vlBeerA} = {soma}");
             ExibirPontosFlutuantes();
+        }
+
+        private static void Decimal()
+        {
+            decimal salario = 1050.00m;
+            Console.WriteLine($"Salario professor: {salario}");
+            decimal aulaE = 10;
+            decimal valorA = 100.00m;
+            decimal soma = (aulaE * valorA) + salario;
+            Console.WriteLine($"Total a receber:{aulaE} * {valorA} + {salario} = {soma}");
         }
 
         private static void Float()

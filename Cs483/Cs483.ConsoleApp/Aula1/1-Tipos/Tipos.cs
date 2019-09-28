@@ -17,7 +17,7 @@ namespace Cs483.ConsoleApp.Aula1._1_Tipos
             ExibeTiposPorValor();
         }
 
-        private static void ExibeCervejas()
+        public void ExibeCervejas()
         {
             Beer b = new Beer();
             b.Graduacao = "18%";

@@ -2,6 +2,7 @@
 using Cs483.ConsoleApp.Aula1._2_TiposInteiros;
 using Cs483.ConsoleApp.Aula1._3_PontosFlutuante;
 using Cs483.ConsoleApp.Aula1._4_Booleano;
+using Cs483.ConsoleApp.Aula1._5_Structs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace Cs483.ConsoleApp
                 TiposInteiros tiposInt = new TiposInteiros();
                 PontosFlutuante pontos = new PontosFlutuante();
                 Booleano1 booleano = new Booleano1();
-                Struct1 struct1 = new Struct1();
+                Structs1 struct1 = new Structs1();
 
 
                 switch (opcao)
@@ -48,11 +49,11 @@ namespace Cs483.ConsoleApp
                     default:
                         break;
 
-                }
                 Console.ReadLine();
+                Console.Clear();
+                }
 
                 tipos.executa();
-                Console.Clear();
 
             } while (opcao != 0);
        
