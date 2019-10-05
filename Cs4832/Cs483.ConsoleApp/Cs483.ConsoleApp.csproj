@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70766A90-813C-4ADB-940C-781741EB56DA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Cs483.ConsoleApp</RootNamespace>
+    <AssemblyName>Cs483.ConsoleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aula1\1-Tipos\Beer.cs" />
+    <Compile Include="Aula1\1-Tipos\Tipos.cs" />
+    <Compile Include="Aula1\2-TiposInteiros\TiposInteiros.cs" />
+    <Compile Include="Aula1\3-PontoFlutuante\PontoFlutuante.cs" />
+    <Compile Include="Aula1\4-Boolean\Booleano.cs" />
+    <Compile Include="Aula1\5-Structs\BeerS.cs" />
+    <Compile Include="Aula1\5-Structs\Structs.cs" />
+    <Compile Include="Aula1\6-Enum\Enums.cs" />
+    <Compile Include="Aula1\TiposPorValor.cs" />
+    <Compile Include="Aula2\1-Classes\Carro.cs" />
+    <Compile Include="Aula2\1-Classes\Classes.cs" />
+    <Compile Include="Aula2\1-Classes\Veiculo.cs" />
+    <Compile Include="Aula2\1-Classes\VeiculosAquaticos.cs" />
+    <Compile Include="Aula2\1-Classes\VeiculosAnfibio.cs" />
+    <Compile Include="Aula2\1-Classes\VeiculoTerrestre.cs" />
+    <Compile Include="Aula2\2-Delegate\Delegates.cs" />
+    <Compile Include="Aula2\3-String\Strings.cs" />
+    <Compile Include="Aula2\4-Dynamic\Dynamics.cs" />
+    <Compile Include="Aula2\5-Inteface\Interfaces.cs" />
+    <Compile Include="Aula2\5-Inteface\IVeiculoMotorizado.cs" />
+    <Compile Include="Aula2\5-Inteface\IVeiculos.cs" />
+    <Compile Include="Aula2\6-Object\Objects.cs" />
+    <Compile Include="Aula2\TiposPorReferencia.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoPorValor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
