@@ -3,6 +3,7 @@ using Cs483.ConsoleApp.Aula1._2_TiposInteiros;
 using Cs483.ConsoleApp.Aula1._3_PontosFlutuante;
 using Cs483.ConsoleApp.Aula1._4_Booleano;
 using Cs483.ConsoleApp.Aula1._5_Structs;
+using Cs483.ConsoleApp.Aula1._6_Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace Cs483.ConsoleApp
                 PontosFlutuante pontos = new PontosFlutuante();
                 Booleano1 booleano = new Booleano1();
                 Structs1 struct1 = new Structs1();
+                Enums enums = new Enums();
 
 
                 switch (opcao)
@@ -44,6 +46,9 @@ namespace Cs483.ConsoleApp
                         break;
                     case 5:
                         struct1.Executa();
+                        break;
+                    case 6:
+                        enums.Executa();
                         break;
 
                     default:
@@ -68,7 +73,7 @@ namespace Cs483.ConsoleApp
             Console.WriteLine("3 - Pontos flutante");
             Console.WriteLine("4 - Booleano");
             Console.WriteLine("5 - Structs");
-            Console.WriteLine("6 - ");
+            Console.WriteLine("6 - Enums");
             Console.WriteLine("7 - ");
             Console.WriteLine("8 - ");
             Console.WriteLine("9 - ");

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8DBDD16-4C0B-43AD-B2E4-780DD9068F0F}</ProjectGuid>
+    <ProjectGuid>{70766A90-813C-4ADB-940C-781741EB56DA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Cs483.ConsoleApp</RootNamespace>
     <AssemblyName>Cs483.ConsoleApp</AssemblyName>
@@ -46,24 +46,33 @@
     <Compile Include="Aula1\1-Tipos\Beer.cs" />
     <Compile Include="Aula1\1-Tipos\Tipos.cs" />
     <Compile Include="Aula1\2-TiposInteiros\TiposInteiros.cs" />
-    <Compile Include="Aula1\3-PontosFlutuante\PontosFlutuante.cs" />
-    <Compile Include="Aula1\4-Booleano\Booleano1.cs" />
+    <Compile Include="Aula1\3-PontoFlutuante\PontoFlutuante.cs" />
+    <Compile Include="Aula1\4-Boolean\Booleano.cs" />
     <Compile Include="Aula1\5-Structs\BeerS.cs" />
-    <Compile Include="Aula1\5-Structs\Structs1.cs" />
+    <Compile Include="Aula1\5-Structs\Structs.cs" />
     <Compile Include="Aula1\6-Enum\Enums.cs" />
+    <Compile Include="Aula1\TiposPorValor.cs" />
+    <Compile Include="Aula2\1-Classes\Carro.cs" />
+    <Compile Include="Aula2\1-Classes\Classes.cs" />
+    <Compile Include="Aula2\1-Classes\Veiculo.cs" />
+    <Compile Include="Aula2\1-Classes\VeiculosAquaticos.cs" />
+    <Compile Include="Aula2\1-Classes\VeiculosAnfibio.cs" />
+    <Compile Include="Aula2\1-Classes\VeiculoTerrestre.cs" />
+    <Compile Include="Aula2\2-Delegate\Delegates.cs" />
+    <Compile Include="Aula2\3-String\Strings.cs" />
+    <Compile Include="Aula2\4-Dynamic\Dynamics.cs" />
+    <Compile Include="Aula2\5-Inteface\Interfaces.cs" />
+    <Compile Include="Aula2\5-Inteface\IVeiculoMotorizado.cs" />
+    <Compile Include="Aula2\5-Inteface\IVeiculos.cs" />
+    <Compile Include="Aula2\6-Object\Objects.cs" />
+    <Compile Include="Aula2\TiposPorReferencia.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoPorValor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Aula2\1 - Classes\" />
-    <Folder Include="Aula2\2 - Delegate\" />
-    <Folder Include="Aula2\3 - String\" />
-    <Folder Include="Aula2\4 - Dynamic\" />
-    <Folder Include="Aula2\5 - Interface\" />
-    <Folder Include="Aula2\6 - Object\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

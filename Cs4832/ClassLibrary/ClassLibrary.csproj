@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8DBDD16-4C0B-43AD-B2E4-780DD9068F0F}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Cs483.ConsoleApp</RootNamespace>
-    <AssemblyName>Cs483.ConsoleApp</AssemblyName>
+    <ProjectGuid>{79BD35BA-4A28-4C7D-87A7-F34253977AD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassLibrary</RootNamespace>
+    <AssemblyName>ClassLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,27 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aula1\1-Tipos\Beer.cs" />
-    <Compile Include="Aula1\1-Tipos\Tipos.cs" />
-    <Compile Include="Aula1\2-TiposInteiros\TiposInteiros.cs" />
-    <Compile Include="Aula1\3-PontosFlutuante\PontosFlutuante.cs" />
-    <Compile Include="Aula1\4-Booleano\Booleano1.cs" />
-    <Compile Include="Aula1\5-Structs\BeerS.cs" />
-    <Compile Include="Aula1\5-Structs\Structs1.cs" />
-    <Compile Include="Aula1\6-Enum\Enums.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Aula2\1 - Classes\" />
-    <Folder Include="Aula2\2 - Delegate\" />
-    <Folder Include="Aula2\3 - String\" />
-    <Folder Include="Aula2\4 - Dynamic\" />
-    <Folder Include="Aula2\5 - Interface\" />
-    <Folder Include="Aula2\6 - Object\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
